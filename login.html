@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name ="viewport" content="width = device-width, initial-scale=1.0">
+    <title>CODE-IT</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+
+    <div id ="container">
+        <header id ="header1">
+            <div id ="logo">
+                <a href="index.html">
+                    <h1 class="color" style="font-family: 'KCC-Ganpan';">CODE-IT</h1>
+                </a>
+            </div>
+            <nav id="navi">
+               <ul id="topMenu">
+                   <li><a href="intro.html">학회소개<span>🤍</span></a></li>
+                    <li><a href="activity.html">학회활동<span>🤍</span></a></li>
+                    <li><a href="rule.html">학회 규칙<span>🤍</span></a></li>
+                    <li><a href="login.html">신청서<span>🤍 </span></a></li>
+                    <li><a href="assignment.html">과제<span>🤍 </span></a></li>
+                    <div  id ="div1" style="float: right; margin-right: 5px; "> 
+                        <li>색상 바꾸기</li>
+                       <li> <button id="yellow" >💛</button>  </li>
+                        <li> <button id="pink" >❤️</button> </li>
+                        <li><button id="skyblue" >💙</button></li>
+                    </div>
+                            
+                   
+                   
+               </ul>
+                
+            </nav>
+        </header>
+
+        <section>
+
+        <div id="introdiv" > 
+           
+             <br><br><br><br><br>
+            <div style="text-align: center;"> 
+                <h2 >로그인을 하셔야 신청서를 작성하실 수 있습니다.</h2>
+                <p>초기 로그인 아이디와 비밀번호는 sookmyung입니다.</p><br>
+
+                <h3>아이디</h3><br>
+        
+                <form id="idform">
+                    <input type="id" size="40"name="id" id="id_" placeholder="아이디를 입력해주세요" style="height: 60px; font-size: 20px;">
+                </form>
+                <br>
+                <h3>비밀번호</h3><br>
+                <form id="passform">
+                    <input type="password" size="40" name="pass" id="pass_" placeholder="비밀번호를 입력해주세요" style="height: 60px;  font-size: 20px;">
+                </form>
+                <br>
+                <br>
+                <button id="submit" style="height: 30px; width: 60px;">로그인</button>
+        
+                <script> 
+                    document.getElementById('submit').onclick = function() {
+                    var ID = document.getElementById('id_').value;
+                    var pass = document.getElementById('pass_').value;
+                    if (ID === "sookmyung" && pass === "sookmyung") {
+                        alert("로그인이 성공적으로 되었습니다");
+                        window.location.href = "form.html"; 
+                    }
+                    else {
+                        alert("로그인을 실패하였습니다. 다시 입력해주세요");
+                    }
+                    }
+                </script>
+            </div>
+   
+        </div>
+        <div id ="links">
+            <img src="snowing.png"  width="70%" height="70%"   >
+        </div>
+
+        </section>
+
+
+        <footer id="footer1">
+            만든이 :2216356 신예진<br>
+            본 저작권은 저작자에게 있습니다.
+        </footer>
+    </div>
+    <script src="button.js"></script>
+    </body>
+</html>

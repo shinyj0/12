@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name ="viewport" content="width = device-width, initial-scale=1.0">
+    <title>CODE-IT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id ="container">
+        <header id ="header1">
+            <div id ="logo">
+                <a href="index.html">
+                    <h1 class="color" style="font-family: 'KCC-Ganpan';">CODE-IT</h1>
+                </a>
+            </div>
+            <nav id="navi">
+               <ul id="topMenu">
+                   <li><a href="intro.html">학회소개<span>🤍</span></a></li>
+                    <li><a href="activity.html">학회활동<span>🤍</span></a></li>
+                    <li><a href="rule.html">학회 규칙<span>🤍</span></a></li>
+                    <li><a href="login.html">신청서<span>🤍 </span></a></li>
+                    <li><a href="assignment.html">과제<span>🤍 </span></a></li>
+                   <li> <button id="yellow" >yellow</button>  
+                    <script>
+                        var element1 = document.getElementById('navi');
+                        var element2 = document.getElementById('header1');
+                        var button = document.getElementById('yellow');
+                
+                        button.addEventListener('click', function() {
+                            element1.style.backgroundColor=' rgba(255, 207, 85, 0.885)';
+                            element2.style.backgroundColor=' rgba(255, 207, 85, 0.885)';
+        
+                        });
+                    </script>
+                    </li>
+                    <li> <button id="pink" >pink</button>  
+                        <script>
+                            var element1 = document.getElementById('navi');
+                            var element2 = document.getElementById('header1');
+                            var button = document.getElementById('pink');
+                    
+                            button.addEventListener('click', function() {
+                                element1.style.backgroundColor="pink";
+                                element2.style.backgroundColor='pink';
+            
+                            });
+                        </script>
+                        </li>
+                   
+               </ul>
+                
+            </nav>
+        </header>
+    <sectiom>
+        <div id="introdiv"> 
+            <br>
+            <h2>스터디 신청 현황</h2>
+ 
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>신청자</th>
+                            <th>학번</th>
+                            <th>연락처</th>
+                            <th>신청 스터디</th>
+                            <th>요청사항</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <script src="study.js"> </script> 
+        </div
+     </section>
+
+        <aside>
+            <img src="snowing.png"  width="70%" height="70%"    >
+        </aside>
+         
+         <footer id ="footer1">
+            만든이 :2216356 신예진<br>
+            본 저작권은 저작자에게 있습니다.
+        </footer>
+    </div>
+    
+    </body>
+</html>

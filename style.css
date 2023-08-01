@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'SUIT-Regular';
+    
+}
+
+#container{
+     margin:0 auto;
+    width:95%;
+}
+
+header { 
+    
+    width: 100%;
+    /* 너비 */ 
+    height: 50px; /* 높이 */ 
+    background-color: rgba(134, 203, 255, 0.885);
+
+
+}
+
+
+#logo { 
+    float: left;  
+    width: 250px; 
+    height: 50px; 
+ 
+}
+
+nav{
+    float:right;
+    width:100%;
+    height:50px;
+    background-color:  rgba(134, 203, 255, 0.885);
+}
+
+
+ 
+#slideShow{
+    clear:both;
+    width:100%;
+    height:300px;
+    
+    overflow:hidden;
+    position:relative;    
+}
+#sliders{
+    position:absolute;
+    width:100%;
+}
+#sliders>img{
+    width:100%;
+    height:300px;  /*이상*/
+    float:left;
+    
+}
+
+
+ 
+#before{
+    left:0;
+    position: absolute;
+    height: 300px;
+    top:0;
+    border:none;
+    font-weight:bold;
+    font-size:large;
+    color:rgb(255, 106, 0)
+}
+#next{
+    right:0;
+    position: absolute;
+    height: 300px;
+    top:0;
+    border:none;
+    font-weight:bold;
+    font-size:large;
+    color:rgb(255, 106, 0)
+}
+
+#contents{
+    width:100%;
+    height:300px;
+    
+}
+
+#tabMenu{
+    float: left; /* 왼쪽으로 플로팅 */ 
+    width: 800px; /* 너비 */ 
+    height: 40px;
+
+    background-color:white;
+
+  
+}
+ 
+#tab1:checked ~ #notice,
+#tab2:checked ~ #study,
+#tab3:checked ~ #schedule{  
+    display:block;
+}
+.tabContent{
+  
+    display: none;
+    border-top: 5px solid   rgb(80, 128, 160);
+}
+
+#tabMenu label{
+    display:inline-block;
+    padding: 8px 10px;
+    border-style: solid;
+    color:    rgb(80, 128, 160);
+    font-style: normal;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+#tabMenu ul{
+    list-style:circle; 
+}
+#tabMenu input[type="radio"]
+{
+    display:none;
+}
+
+#tabMenu label:hover{
+    color:rgb(89, 94, 105);
+    font-weight: bolder;
+     cursor:pointer;
+  }
+
+
+#snow{
+    float: right;
+     
+    width: 40%;
+    height:300px;
+   text-align: center;
+}
+
+
+footer{
+    width:100%;
+    height:50px;
+    background-color: rgba(134, 203, 255, 0.885);
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+#topMenu{
+    height: 100px;
+}
+#topMenu >li> a{
+    display:block;
+    padding:20px 60px;
+}
+#topMenu> li{
+    float:left;
+}
+#div1> li{
+    float:left;
+}
+div li button{
+     background-color: transparent;
+     border-color: transparent;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.color{color:rgb(80, 128, 160);}
+#introdiv{
+   
+    display: inline-block ;
+    width:60%;
+    height:600px;
+    background-color:  rgba(224, 239, 255, 0.885);
+    
+}
+#links{
+    float: right;
+    width: 40%;
+    height:600px;
+   background-color:  rgba(224, 239, 255, 0.885);
+   text-align: center;
+
+   
+}
+
+li{
+    list-style-position: inside;
+}
+ol li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+ 
+#addToDo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+     
+  }
+  h2{
+    color: rgb(80, 128, 160);
+    font-weight: 500;
+  }
+   
+.image-row{
+    display:flex;
+    text-align: center;
+
+  }
+  
